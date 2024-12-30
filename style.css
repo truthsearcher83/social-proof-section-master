@@ -130,7 +130,7 @@ body {
       " sub-title sub-title ratings "
       " testimonials testimonials testimonials ";
     gap: 1.5em;
-    box-shadow: 1px 2px 48px 5px rgba(0, 0, 0, 0.56);
+
     padding: 6em 10em;
   }
   .social-proof__title {
