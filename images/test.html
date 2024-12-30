@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: grid;
+      }
+      p {
+        margin: 0;
+      }
+      p:first-child {
+        background-color: red;
+        grid-column: 1/2;
+        margin: 0;
+      }
+      p:nth-child(2) {
+        grid-column: 2/3;
+        background-color: blue;
+      }
+
+      p:last-child {
+        background-color: green;
+        grid-column: 3/4;
+      }
+      main {
+        display: flex;
+        max-width: 1900px;
+
+        grid-template-columns: auto auto auto;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Tet in first column</p>
+      <p>text</p>
+      <p>Lorem</p>
+    </main>
+  </body>
+</html>
