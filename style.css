@@ -130,10 +130,9 @@ body {
       " sub-title sub-title ratings "
       " testimonials testimonials testimonials ";
     gap: 1.5em;
-
-    padding: 6em 10em;
   }
   .social-proof__title {
+    margin: 0;
     grid-area: title;
     line-height: 1;
   }
@@ -206,17 +205,21 @@ body {
 .social-proof__ratings {
   text-align: center;
 }
+
+.social-proof__title {
+  max-width: 17ch;
+  margin: 1rem auto 0;
+  color: var(--clr-primary-800);
+}
 @media (min-width: 37rem) {
   .social-proof__title,
   .social-proof__sub-title,
   .social-proof__ratings {
     text-align: initial;
   }
-}
-.social-proof__title {
-  max-width: 17ch;
-  margin: 1rem auto 0;
-  color: var(--clr-primary-800);
+  .social-proof__title {
+    margin: 0;
+  }
 }
 .social-proof__rating {
   background-color: var(--clr-neutral-200);
